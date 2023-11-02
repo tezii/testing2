@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS tutorial</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- async vs defer -->
+    <script src="long.js" async></script>
+    <script src="short.js" defer></script>
+    <script src="medium.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>
+        JavaScript Loading Strategies <br> (async and defer)
+    </h1>
+    <div>
+        <p>
+            async allows js files to download as html is parsing
+            and will pause html loading only until excecute js is complete
+        </p>
+        <p>
+            defer allows js files to download as html is parsing
+            and will execute js after html has finished parsing (loading)
+        </p>
+        <p>
+            no async and defer: html parsing (loading) is paused until js
+            is downloaded and excecuted (deployed)
+        </p>
+    </div>
+
+    <h1>JavaScript Outputs</h1>
+        <p>
+            alert("example");
+            this will pop up an alert in browser which you need to click ok to continue
+        </p>
+        <p>
+            prompt("example question?", "placeholder answer");
+            this will pop up an alert in browser which you need to type in an answer and click ok
+        </p>
+        <p>
+            confirm("are you sure you want to continue?");
+            this will pop up a message with options ok and cancel 
+        </p>
+</body>
+</html>
